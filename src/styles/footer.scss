@@ -1,0 +1,23 @@
+.footer {
+  background-color: #1f2937;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 15px;
+  padding: 30px 0;
+}
+.boxNav{
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 15px;
+  :hover{
+    color: #2563eb;
+    cursor: pointer;
+  }
+}
+.payment{
+  text-align: center;
+}
+.payment img{
+  display: inline-block;
+}
