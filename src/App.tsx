@@ -1,14 +1,10 @@
 import React from 'react';
-import Header from "./componnents/Header";
-import Banner from "./componnents/Banner";
-import Footer from "./componnents/Footer";
+import Home from "./pages/Home";
 
 function App() {
   return (
     <div>
-      <Header />
-      <Banner />
-      <Footer />
+      <Home/>
     </div>
   );
 }
