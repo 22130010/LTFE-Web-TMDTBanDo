@@ -4,7 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ecc3dbdf-a2aa-4eb7-8619-c8c6f566b506" name="Changes" comment="Update footer" />
+    <list default="true" id="ecc3dbdf-a2aa-4eb7-8619-c8c6f566b506" name="Changes" comment="Update footer">
+      <change afterPath="$PROJECT_DIR$/src/componnents/ProductList.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/data/dataProducts.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/data/products.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/styles/productList.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/componnents/Footer.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/componnents/Footer.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/constant.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/constant.js" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -13,8 +22,10 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="SCSS File" />
+        <option value="TypeScript JSX File" />
+        <option value="tsconfig.json" />
         <option value="JavaScript File" />
+        <option value="SCSS File" />
       </list>
     </option>
   </component>
@@ -26,6 +37,18 @@
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;PHAMTHINHUTDUY&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/22130010/LTFE-Web-TMDTBanDo.git&quot;,
+    &quot;accountId&quot;: &quot;6885cfc8-2eb8-421b-aca8-a6e3f91b524c&quot;
+  }
+}</component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 5
 }</component>
@@ -34,31 +57,35 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
-    "disable.download.node.interpreter.editor.notification": "true",
-    "git-widget-placeholder": "nhutduy",
-    "ignore.virus.scanning.warn.message": "true",
-    "javascript.preferred.runtime.type.id": "node",
-    "list.type.of.created.stylesheet": "SCSS",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_interpreter_path": "node",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "watcher.settings",
-    "ts.external.directory.path": "C:\\Users\\duypham\\WebstormProjects\\LTFE-Web-TMDTBanDo\\node_modules\\typescript\\lib",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
+    &quot;disable.download.node.interpreter.editor.notification&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;nhutduy&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;javascript.preferred.runtime.type.id&quot;: &quot;node&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;SCSS&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_interpreter_path&quot;: &quot;node&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;watcher.settings&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;C:\\Users\\duypham\\WebstormProjects\\LTFE-Web-TMDTBanDo\\node_modules\\typescript\\lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\duypham\WebstormProjects\LTFE-Web-TMDTBanDo\src\js" />
+      <recent name="C:\Users\duypham\WebstormProjects\LTFE-Web-TMDTBanDo\src\data" />
+      <recent name="C:\Users\duypham\WebstormProjects\LTFE-Web-TMDTBanDo\src" />
+      <recent name="C:\Users\duypham\WebstormProjects\LTFE-Web-TMDTBanDo\public" />
       <recent name="D:\webtmdt\public" />
     </key>
   </component>
@@ -97,7 +124,10 @@
       <workItem from="1766578426385" duration="1390000" />
       <workItem from="1766622989614" duration="5879000" />
       <workItem from="1766726076895" duration="1117000" />
-      <workItem from="1766727263071" duration="13249000" />
+      <workItem from="1766727263071" duration="13995000" />
+      <workItem from="1766836160824" duration="341000" />
+      <workItem from="1766993895197" duration="9492000" />
+      <workItem from="1767145814750" duration="14292000" />
     </task>
     <task id="LOCAL-00001" summary="Update footer">
       <option name="closed" value="true" />
@@ -107,7 +137,15 @@
       <option name="project" value="LOCAL" />
       <updated>1766756011794</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Update footer">
+      <option name="closed" value="true" />
+      <created>1766756111375</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1766756111375</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -127,16 +165,5 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Update footer" />
     <option name="LAST_COMMIT_MESSAGE" value="Update footer" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/src/App.tsx</url>
-          <properties lambdaOrdinal="-1" />
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

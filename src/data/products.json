@@ -1,0 +1,11 @@
+{
+  "products":
+  [
+    {"id":1,"name":"Áo đồng phục công ty Basic","category":"Công ty","price":150000,"image":"https://dongphucgiadinh.com/wp-content/uploads/2022/08/ao-dong-phuc-cong-ty-5-1.jpg","description":"Áo đồng phục công ty chất liệu cotton cao cấp","sizes":["S","M","L","XL"],"colors":["Trắng","Xanh"]},
+    {"id":2,"name":"Áo đồng phục công ty Premium","category":"Công ty","price":180000,"image":"https://dongphucdidy.vn/wp-content/uploads/2023/11/5b.png","description":"Áo đồng phục công ty form đẹp","sizes":["M","L","XL","XXL"],"colors":["Trắng","Đen"]},
+    {"id":3,"name":"Áo polo đồng phục văn phòng","category":"Văn phòng","price":170000,"image":"https://dongphuchaianh.vn/wp-content/uploads/2022/07/ao-thun-dong-phuc-co-co-35.jpg","description":"Áo polo đồng phục trẻ trung","sizes":["S","M","L","XL"],"colors":["Xanh","Đen"]},
+    {"id":4,"name":"Áo đồng phục công sở tay dài","category":"Công sở","price":220000,"image":"https://dongphuchaianh.vn/wp-content/uploads/2023/03/mau-dong-phuc-cong-so-ao-so-mi-mau-xanh-ke-trang-dai-tay.jpg","description":"Áo đồng phục tay dài lịch sự","sizes":["S","M","L","XL"],"colors":["Trắng","Xanh nhạt"]},
+    {"id":5,"name":"Áo đồng phục kỹ thuật","category":"Kỹ thuật","price":160000,"image":"https://th.bing.com/th/id/R.cc87ad989baafdd7dbbac8daf2ce9877?rik=ZpOFIy%2fHBMiM5w&pid=ImgRaw&r=0","description":"Áo đồng phục kỹ thuật bền bỉ","sizes":["M","L","XL"],"colors":["Xám","Xanh đậm"]}
+
+  ]
+}

@@ -1,5 +1,5 @@
 import '../styles/footer.scss';
-import {dataMenu} from "../styles/constant";
+import {dataMenu} from "../js/constant";
 
 const Footer =()=>{
     return (
