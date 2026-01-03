@@ -5,10 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ecc3dbdf-a2aa-4eb7-8619-c8c6f566b506" name="Changes" comment="Update footer">
-      <change afterPath="$PROJECT_DIR$/src/componnents/SPnoibat.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/services/Products.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/componnents/ProductList.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Home.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Home.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/componnents/Banner.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/componnents/Banner.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Home.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Home.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/services/Products.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/Products.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -112,7 +113,7 @@
       <workItem from="1767324732240" duration="1017000" />
       <workItem from="1767356430790" duration="2629000" />
       <workItem from="1767359307001" duration="776000" />
-      <workItem from="1767402220881" duration="7420000" />
+      <workItem from="1767402220881" duration="9947000" />
     </task>
     <task id="LOCAL-00001" summary="Update footer">
       <option name="closed" value="true" />

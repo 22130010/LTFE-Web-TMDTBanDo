@@ -1,9 +1,9 @@
 import { useState } from 'react';
 
 const images = [
-    '/banner1.jpg',
-    '/banner2.jpg',
     '/banner3.jpg',
+    '/banner2.jpg',
+    '/banner1.jpg',
     '/banner5.jpg',
 ];
 
