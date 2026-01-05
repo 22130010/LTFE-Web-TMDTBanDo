@@ -7,10 +7,8 @@ import SPnoibat from "../componnents/SPnoibat";
 function Home()  {
     return (
         <div>
-            <Header/>
             <Banner/>
             <SPnoibat/>
-            <Footer/>
         </div>
     );
 }
