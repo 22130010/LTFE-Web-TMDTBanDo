@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { Link } from 'react-router-dom';
 import productsData from "../services/Products.json";
 import Header from "../componnents/Header";
 import Footer from "../componnents/Footer";
@@ -23,7 +24,6 @@ function ProductList() {
 
     return (
         <div>
-         <Header/>
         <div className="max-w-7xl mx-auto px-4 py-6">
             <h1 className="text-3xl font-bold text-center mb-6">
                 Danh sách sản phẩm
@@ -50,15 +50,17 @@ function ProductList() {
                                 {item.price.toLocaleString()} đ
                             </p>
 
-                            <button className="mt-3 w-full bg-blue-600 text-white py-2 rounded hover:bg-blue-700">
+                            <Link
+                                to={`/product/${item.id}`}
+                                className="block text-center w-full bg-blue-600 text-white py-2 rounded hover:bg-blue-700 transition"
+                            >
                                 Xem chi tiết
-                            </button>
+                            </Link>
                         </div>
                     </div>
                 ))}
             </div>
         </div>
-            <Footer/>
         </div>
     );
 }
