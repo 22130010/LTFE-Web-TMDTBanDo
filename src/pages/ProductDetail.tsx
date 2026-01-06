@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { useParams, Link } from 'react-router-dom';
+import {useParams, Link, useNavigate} from 'react-router-dom';
 import productsData from "../services/Products.json";
 
 interface Product {
@@ -20,6 +20,7 @@ const ProductDetail = () => {
     const [selectedColor, setSelectedColor] = useState('');
     const [quantity, setQuantity] = useState(1);
     const [activeImage, setActiveImage] = useState<string>('');
+    const navigate = useNavigate();
 
     // Tìm sản phẩm, reset state
     useEffect(() => {
@@ -63,7 +64,9 @@ const ProductDetail = () => {
         currentCart.push(cartItem);
         localStorage.setItem('cart', JSON.stringify(currentCart));
 
-        alert(` Đã thêm "${product.name}" vào giỏ!`);
+        navigate('/cart');
+
+        // alert(` Đã thêm "${product.name}" vào giỏ!`);
     };
 
     if (!product) {
