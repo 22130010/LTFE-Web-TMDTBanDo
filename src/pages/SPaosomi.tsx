@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react";
-import { Link } from 'react-router-dom';
 import productsData from "../services/Products.json";
-
+import {Link} from "react-router-dom";
 
 interface Product {
     id: number;
@@ -14,15 +13,19 @@ interface Product {
     colors: string[];
 }
 
-function ProductList() {
+function SPaosomi() {
     const [products, setProducts] = useState<Product[]>([]);
 
     useEffect(() => {
-        setProducts(productsData);
+        const aoSomiDongPhuc = productsData.filter(
+            (item) => item.category === "Áo sơ mi công sở"
+        );
+
+        setProducts(aoSomiDongPhuc);
     }, []);
 
     return (
-        <div>
+
         <div className="max-w-7xl mx-auto px-4 py-6">
             <h1 className="text-3xl font-bold text-center mb-6">
                 Danh sách sản phẩm
@@ -55,13 +58,14 @@ function ProductList() {
                             >
                                 Xem chi tiết
                             </Link>
+
                         </div>
                     </div>
                 ))}
             </div>
         </div>
-        </div>
+
     );
 }
 
-export default ProductList;
+export default SPaosomi;
