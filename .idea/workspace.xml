@@ -5,10 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ecc3dbdf-a2aa-4eb7-8619-c8c6f566b506" name="Changes" comment="Update footer">
-      <change afterPath="$PROJECT_DIR$/src/componnents/ProductList.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/SPaokhoac.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/SPaosomi.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/SPaothun.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/SPbaoho.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/componnents/Banner.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/componnents/Banner.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/componnents/SPnoibat.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/componnents/SPnoibat.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/Home.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Home.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/ProductList.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/ProductList.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/services/Products.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/Products.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -48,10 +56,10 @@
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
     &quot;disable.download.node.interpreter.editor.notification&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;TA&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
     &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
     &quot;javascript.preferred.runtime.type.id&quot;: &quot;node&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/FE/LTFE-Web-TMDTBanDo&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/PJFE/LTFE-Web-TMDTBanDo&quot;,
     &quot;list.type.of.created.stylesheet&quot;: &quot;SCSS&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
@@ -60,7 +68,7 @@
     &quot;nodejs_interpreter_path&quot;: &quot;node&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;watcher.settings&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;D:\\FE\\LTFE-Web-TMDTBanDo\\node_modules\\typescript\\lib&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;D:\\PJFE\\LTFE-Web-TMDTBanDo\\node_modules\\typescript\\lib&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
@@ -114,6 +122,10 @@
       <workItem from="1767356430790" duration="2629000" />
       <workItem from="1767359307001" duration="776000" />
       <workItem from="1767402220881" duration="9947000" />
+      <workItem from="1767602610238" duration="1756000" />
+      <workItem from="1767613301342" duration="625000" />
+      <workItem from="1767699221049" duration="883000" />
+      <workItem from="1767706701366" duration="830000" />
     </task>
     <task id="LOCAL-00001" summary="Update footer">
       <option name="closed" value="true" />

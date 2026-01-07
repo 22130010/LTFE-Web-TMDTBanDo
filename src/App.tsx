@@ -5,6 +5,10 @@ import ProductList from "./pages/ProductList";
 import ProductDetail from './pages/ProductDetail';
 import Header from "./componnents/Header";
 import Footer from "./componnents/Footer";
+import SPaothun from "./pages/SPaothun";
+import SPaosomi from "./pages/SPaosomi";
+import SPbaoho from "./pages/SPbaoho";
+import SPaokhoac from "./pages/SPaokhoac";
 
 function App() {
     return (
@@ -15,6 +19,10 @@ function App() {
                     <Route path="/" element={<Home/>} />
                     <Route path="/san-pham" element={<ProductList />} />
                     <Route path="/product/:id" element={<ProductDetail />} />
+                    <Route path="/san-pham/ao-thun" element={<SPaothun />} />
+                    <Route path="/san-pham/so-mi" element={<SPaosomi />} />
+                    <Route path="/san-pham/bao-ho" element={<SPbaoho />} />
+                    <Route path="/san-pham/ao-khoac" element={<SPaokhoac />} />
                 </Routes>
             </main>
             <Footer />
