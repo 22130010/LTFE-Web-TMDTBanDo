@@ -1,6 +1,8 @@
-import React, { useState, useEffect } from 'react';
-import { useParams, Link } from 'react-router-dom';
+import React, { useState, useEffect} from 'react';
+import {useParams, Link, useNavigate} from 'react-router-dom';
 import productsData from "../services/Products.json";
+import {addToCart} from "../redux/cartSlice";
+import {useDispatch} from "react-redux";
 
 interface Product {
     id: number;
@@ -20,6 +22,8 @@ const ProductDetail = () => {
     const [selectedColor, setSelectedColor] = useState('');
     const [quantity, setQuantity] = useState(1);
     const [activeImage, setActiveImage] = useState<string>('');
+    const navigate = useNavigate();
+    const dispatch = useDispatch();
 
     // Tìm sản phẩm, reset state
     useEffect(() => {
@@ -54,8 +58,8 @@ const ProductDetail = () => {
             name: product.name,
             price: product.price,
             image: activeImage,
-            size: selectedSize,
-            color: selectedColor,
+            sizes: selectedSize,
+            colors: selectedColor,
             quantity: quantity
         };
 
@@ -63,7 +67,8 @@ const ProductDetail = () => {
         currentCart.push(cartItem);
         localStorage.setItem('cart', JSON.stringify(currentCart));
 
-        alert(` Đã thêm "${product.name}" vào giỏ!`);
+        dispatch(addToCart(cartItem));
+        navigate('/cart');
     };
 
     if (!product) {

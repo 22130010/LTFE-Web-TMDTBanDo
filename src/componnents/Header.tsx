@@ -13,7 +13,7 @@ const MENU_ITEMS = [
             { label: 'Áo khoác gió', href: '/san-pham/ao-khoac' },
         ]
     },
-    { label: 'Giỏ Hàng', href: '/gio-hang' },
+    { label: 'Giỏ Hàng', href: '/cart' },
     {
         label: 'Tin Tức',
         href: '/tin-tuc',
