@@ -63,12 +63,12 @@ const ProductDetail = () => {
             quantity: quantity
         };
 
-        const currentCart = JSON.parse(localStorage.getItem('cart') || '[]');
-        currentCart.push(cartItem);
-        localStorage.setItem('cart', JSON.stringify(currentCart));
-
+        // const currentCart = JSON.parse(localStorage.getItem('cart') || '[]');
+        // currentCart.push(cartItem);
+        // localStorage.setItem('cart', JSON.stringify(currentCart));
+        //
         dispatch(addToCart(cartItem));
-        navigate('/cart');
+        navigate("/cart");
     };
 
     if (!product) {

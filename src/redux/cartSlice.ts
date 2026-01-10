@@ -5,8 +5,8 @@ export interface cartItem{
     name: string;
     price: number;
     image: string;
-    sizes: string;
-    colors: string;
+    sizes: string[];
+    colors: string[];
     quantity: number;
 }
 interface CartState{

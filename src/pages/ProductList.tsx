@@ -27,14 +27,10 @@ function ProductList({ searchResult, customTitle }: ProductListProps) {
         setProducts(productsData);
     }, []);
 
-    // 1. Biến quyết định hiển thị: Nếu có 'searchResult' thì dùng nó, còn không thì dùng 'products' (của code cũ)
-    // Dùng toán tử ?? để đảm bảo nếu searchResult là mảng rỗng [] thì vẫn lấy nó (để hiện thông báo không tìm thấy)
     const finalProducts = searchResult ?? products;
 
-    // 2. Logic tiêu đề: Nếu có title truyền vào thì dùng, không thì dùng mặc định
     const titleToShow = customTitle || "Danh sách sản phẩm";
 
-    // 3. Hàm lưu lịch sử xem (Sản phẩm đã xem) - Phần bạn yêu cầu thêm
     const handleAddToHistory = (item: Product) => {
         const key = 'recently_viewed';
         const existing = localStorage.getItem(key);
