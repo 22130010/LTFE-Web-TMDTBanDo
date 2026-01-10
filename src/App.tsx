@@ -9,8 +9,7 @@ import SPaothun from "./pages/SPaothun";
 import SPaosomi from "./pages/SPaosomi";
 import SPbaoho from "./pages/SPbaoho";
 import SPaokhoac from "./pages/SPaokhoac";
-import Cart from "./pages/Cart";
-import Checkout from "./pages/checkOut";
+import SearchResultsPage from "./pages/SearchResultsPage";
 
 function App() {
     return (
@@ -25,8 +24,7 @@ function App() {
                     <Route path="/san-pham/so-mi" element={<SPaosomi />} />
                     <Route path="/san-pham/bao-ho" element={<SPbaoho />} />
                     <Route path="/san-pham/ao-khoac" element={<SPaokhoac />} />
-                    <Route path="/cart" element={<Cart/>} />
-                    <Route path="/checkout" element={<Checkout/>} />
+                    <Route path="/search-results" element={<SearchResultsPage />} />
                 </Routes>
             </main>
             <Footer />
