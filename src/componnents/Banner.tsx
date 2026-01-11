@@ -2,10 +2,10 @@ import { useState, useEffect } from 'react';
 import { ChevronLeftIcon, ChevronRightIcon } from '@heroicons/react/24/outline';
 
 const images = [
-    '/banner3.jpg',
-    '/banner2.jpg',
-    '/banner1.jpg',
-    '/banner5.jpg',
+    'https://dongphuchaianh.vn/wp-content/uploads/2025/11/bst-essence-banner-pc.jpg',
+    'https://dongphucatd.vn/wp-content/uploads/2022/05/banner-dong-phuc-cong-so-1349x610px_1561949921-min.jpeg',
+    'https://dongphuchaianh.com/wp-content/uploads/2025/09/banner-bst-fancy.jpg',
+    'https://www.dongphuctranganh.vn/media/images/00003-banner-dong-phuc-trang-anh.jpg',
 ];
 
 const Banner = () => {
