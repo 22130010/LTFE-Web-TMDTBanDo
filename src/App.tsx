@@ -10,12 +10,15 @@ import SPaosomi from "./pages/SPaosomi";
 import SPbaoho from "./pages/SPbaoho";
 import SPaokhoac from "./pages/SPaokhoac";
 import SearchResultsPage from "./pages/SearchResultsPage";
+import Cart from "./pages/Cart";
+import Checkout from "./pages/checkOut";
+
 
 function App() {
     return (
         <div className="flex flex-col min-h-screen">
             <Header />
-            <main className="flex-grow bg-gray-50">
+            <main className="flex-grow bg-gray-50 pt-20">
                 <Routes>
                     <Route path="/" element={<Home/>} />
                     <Route path="/san-pham" element={<ProductList />} />
@@ -25,6 +28,9 @@ function App() {
                     <Route path="/san-pham/bao-ho" element={<SPbaoho />} />
                     <Route path="/san-pham/ao-khoac" element={<SPaokhoac />} />
                     <Route path="/search-results" element={<SearchResultsPage />} />
+                    <Route path="/gio-hang" element={<Cart/>} />
+                    <Route path="/checkout" element={<Checkout />} />
+
                 </Routes>
             </main>
             <Footer />

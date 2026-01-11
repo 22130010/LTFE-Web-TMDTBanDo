@@ -187,12 +187,20 @@ const ProductDetail = () => {
                             >+</button>
                         </div>
 
-                        <button
+                        <Link
+                            to={`/gio-hang`}
                             onClick={handleAddToCart}
-                            className="flex-1 bg-red-600 text-white py-3 rounded font-bold hover:bg-red-700 shadow-md transition-transform active:scale-95"
+                            className="flex-1 flex items-center justify-center
+                            bg-red-600 text-white py-3 rounded-xl font-bold
+                            hover:bg-red-700
+                            hover:-translate-y-0.5
+                            shadow-lg
+                            transition-all duration-200
+                            active:scale-95"
                         >
                             THÊM VÀO GIỎ NGAY
-                        </button>
+                        </Link
+>
                     </div>
                 </div>
             </div>
