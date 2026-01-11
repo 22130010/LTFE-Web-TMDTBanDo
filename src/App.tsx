@@ -12,11 +12,13 @@ import SPaokhoac from "./pages/SPaokhoac";
 import SearchResultsPage from "./pages/SearchResultsPage";
 import Cart from "./pages/Cart";
 import CheckOut from "./pages/checkOut";
+import MiniCart from "./componnents/MiniCart";
 
 function App() {
     return (
         <div className="flex flex-col min-h-screen">
             <Header />
+            <MiniCart/>
             <main className="flex-grow bg-gray-50">
                 <Routes>
                     <Route path="/" element={<Home/>} />
