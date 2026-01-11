@@ -1,7 +1,7 @@
 import React, { useState, useEffect} from 'react';
 import {useParams, Link, useNavigate} from 'react-router-dom';
 import productsData from "../services/Products.json";
-import {addToCart} from "../redux/cartSlice";
+import {addToCart, showMiniCart} from "../redux/cartSlice";
 import {useDispatch} from "react-redux";
 
 interface Product {
@@ -62,13 +62,8 @@ const ProductDetail = () => {
             colors: selectedColor,
             quantity: quantity
         };
-
-        // const currentCart = JSON.parse(localStorage.getItem('cart') || '[]');
-        // currentCart.push(cartItem);
-        // localStorage.setItem('cart', JSON.stringify(currentCart));
-        //
         dispatch(addToCart(cartItem));
-        navigate("/cart");
+        dispatch(showMiniCart());
     };
 
     if (!product) {

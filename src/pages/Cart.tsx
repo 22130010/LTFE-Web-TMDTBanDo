@@ -75,7 +75,6 @@ const Cart = () => {
                                 >+</button>
                             </div>
 
-                            {/* Xóa */}
                             <button
                                 className="text-red-500 hover:text-red-700 font-bold"
                                 onClick={() => dispatch(removeCart({
@@ -89,7 +88,6 @@ const Cart = () => {
                     ))}
                 </div>
 
-                {/* Tổng tiền */}
                 <div className="border rounded-lg p-6 h-fit">
                     <h2 className="text-xl font-bold mb-4">Tóm tắt đơn hàng</h2>
 

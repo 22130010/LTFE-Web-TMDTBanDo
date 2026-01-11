@@ -9,17 +9,20 @@ export interface cartItem{
     colors: string[];
     quantity: number;
 }
-interface CartState{
-    items: cartItem[];
-}
 
-const initialState: CartState = {
-    items: JSON.parse(localStorage.getItem("cart") || "[]"),
-};
 export const cartSlice = createSlice({
     name: 'cart',
-    initialState,
+    initialState: {
+        items: JSON.parse(localStorage.getItem("cart") || "[]") as cartItem[],
+        showMiniCart: false,
+    },
     reducers: {
+        showMiniCart: (state) => {
+            state.showMiniCart = true;
+        },
+        hideMiniCart: (state) => {
+            state.showMiniCart = false;
+        },
 
         setQuantity(state, action){
             const {id, sizes, colors, quantity} = action.payload;
@@ -62,5 +65,5 @@ export const cartSlice = createSlice({
         }
     },
 });
-export const { setQuantity, removeCart, addToCart } = cartSlice.actions;
+export const {showMiniCart, hideMiniCart, setQuantity, removeCart, addToCart } = cartSlice.actions;
 export default cartSlice.reducer;
