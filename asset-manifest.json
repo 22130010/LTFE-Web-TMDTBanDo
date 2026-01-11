@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/LTFE-Web-TMDTBanDo/static/css/main.59b023dc.css",
+    "main.js": "/LTFE-Web-TMDTBanDo/static/js/main.c350864d.js",
+    "static/js/453.f16dbd8f.chunk.js": "/LTFE-Web-TMDTBanDo/static/js/453.f16dbd8f.chunk.js",
+    "index.html": "/LTFE-Web-TMDTBanDo/index.html",
+    "main.59b023dc.css.map": "/LTFE-Web-TMDTBanDo/static/css/main.59b023dc.css.map",
+    "main.c350864d.js.map": "/LTFE-Web-TMDTBanDo/static/js/main.c350864d.js.map",
+    "453.f16dbd8f.chunk.js.map": "/LTFE-Web-TMDTBanDo/static/js/453.f16dbd8f.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.59b023dc.css",
+    "static/js/main.c350864d.js"
+  ]
+}
