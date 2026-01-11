@@ -19,7 +19,7 @@ function App() {
         <div className="flex flex-col min-h-screen">
             <Header />
             <MiniCart/>
-            <main className="flex-grow bg-gray-50">
+            <main className="flex-grow bg-gray-50 pt-20">
                 <Routes>
                     <Route path="/" element={<Home/>} />
                     <Route path="/san-pham" element={<ProductList />} />
