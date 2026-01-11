@@ -1,6 +1,9 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { Link, useNavigate, NavLink } from 'react-router-dom'; // Import NavLink
 import productsData from "../services/Products.json";
+import {RootState} from "../redux/store";
+import {useSelector} from "react-redux";
+
 
 const MENU_ITEMS = [
     { label: 'Trang Chủ', href: '/' },
@@ -33,6 +36,9 @@ const Header = () => {
 
     const navigate = useNavigate();
     const searchInputRef = useRef<HTMLInputElement>(null);
+
+    const cart = useSelector((state:RootState)=> state.cart.items);
+    const totalQuantity = cart.reduce((sum, item) => sum + item.quantity, 0);
 
     useEffect(() => {
         const handleScroll = () => {
@@ -165,13 +171,13 @@ const Header = () => {
                             </svg>
                         </button>
 
-                        <Link to="/gio-hang" className="p-2.5 text-gray-600 hover:text-blue-600 hover:bg-blue-50 rounded-full transition-all duration-300 relative group">
+                        <Link to="/cart" className="p-2.5 text-gray-600 hover:text-blue-600 hover:bg-blue-50 rounded-full transition-all duration-300 relative group">
                             <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 group-hover:scale-110 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z" />
                             </svg>
 
                             <span className="absolute top-1 right-1 bg-red-500 text-white text-[10px] font-bold w-4 h-4 rounded-full flex items-center justify-center shadow-sm">
-                             0
+                             {totalQuantity}
                             </span>
                         </Link>
                     </div>
