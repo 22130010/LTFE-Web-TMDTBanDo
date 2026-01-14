@@ -1,17 +1,7 @@
 import { useEffect, useState } from "react";
 import productsData from "../services/Products.json";
 import {Link} from "react-router-dom";
-
-interface Product {
-    id: number;
-    name: string;
-    category: string;
-    price: number;
-    image: string | string[];
-    description: string;
-    sizes: string[];
-    colors: string[];
-}
+import {Product} from "../Interface/Product"
 
 const SPnoibat = () => {
     const [p1, setP1] = useState<Product | null>(null);

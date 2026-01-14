@@ -8,6 +8,15 @@ import {useSelector} from "react-redux";
 const MENU_ITEMS = [
     { label: 'Trang Chủ', href: '/' },
     {
+        label: 'Giới Thiệu' ,
+        href: '/gioi-thieu',
+        submenu: [
+            {label: 'Giới thiệu doanh nghiệp', href: '/gioi-thieu/gioi-thieu-doanh-nghiep'},
+            {label: 'văn hóa doanh nghiệp', href: '/gioi-thieu/van-hoa-doanh-nghiep'},
+            {label: 'cơ sở vật chất, thiết bị ', href: '/gioi-thieu/co-so-vat-chat'}
+        ]
+    },
+    {
         label: 'Sản Phẩm',
         href: '/san-pham',
         submenu: [
@@ -25,6 +34,12 @@ const MENU_ITEMS = [
             { label: 'Tuyển dụng', href: '/tin-tuc/tuyen-dung' },
         ]
     },
+    {
+        label: 'Tư Vấn', href: '/tu-van'
+    },
+    {
+        label: 'Liên Hệ', href: '/lien-he'
+    },
 
 ];
 
@@ -32,7 +47,7 @@ const Header = () => {
     const [isSearchOpen, setIsSearchOpen] = useState(false);
     const [keyword, setKeyword] = useState('');
     const [suggestions, setSuggestions] = useState<string[]>([]);
-    const [isScrolled, setIsScrolled] = useState(false); // State để đổi màu header khi cuộn
+    const [isScrolled, setIsScrolled] = useState(false);
 
     const navigate = useNavigate();
     const searchInputRef = useRef<HTMLInputElement>(null);
@@ -114,7 +129,7 @@ const Header = () => {
                     </div>
 
                     <div className="hidden md:flex flex-1 justify-center">
-                        <ul className="flex space-x-8 text-sm font-medium">
+                        <ul className="flex space-x-12 text-large font-medium">
                             {MENU_ITEMS.map((item, index) => (
                                 <li key={index} className="relative group h-full flex items-center">
                                     <NavLink
@@ -122,15 +137,15 @@ const Header = () => {
                                         className={({ isActive }) => `
                                             py-2 px-1 transition-colors border-b-2 
                                             ${isActive
-                                            ? 'text-blue-600 border-blue-600' // Sáng lên khi Active
-                                            : 'text-gray-600 border-transparent hover:text-blue-500 hover:border-blue-200' // Bình thường
+                                            ? 'text-blue-600 border-blue-600' //sáng lên khi Active
+                                            : 'text-gray-600 border-transparent hover:text-blue-500 hover:border-blue-200' //bình thường
                                         }
                                         `}
                                         end={item.href === '/'}
                                     >
                                         {item.label}
                                         {item.submenu && (
-                                            <span className="ml-1 text-[10px] align-middle">▼</span>
+                                            <span className="ml-2 text-[15px] align-middle">▼</span>
                                         )}
                                     </NavLink>
                                     {item.submenu && (
@@ -193,7 +208,7 @@ const Header = () => {
 
                     <div className="relative w-full max-w-2xl px-4 z-10 scale-100 transition-transform duration-300">
                         <div className="bg-white rounded-2xl shadow-2xl overflow-hidden">
-                            {/* Header tìm kiếm */}
+                            {/* header tìm kiếm */}
                             <div className="flex items-center border-b p-2">
                                 <div className="pl-4 text-gray-400">
                                     <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -219,7 +234,7 @@ const Header = () => {
                                 </button>
                             </div>
 
-                            {/* Gợi ý */}
+                            {/* gợi ý */}
                             <div className="bg-gray-50 max-h-[60vh] overflow-y-auto">
                                 {suggestions.length > 0 ? (
                                     <ul>
@@ -245,7 +260,7 @@ const Header = () => {
                                     )
                                 )}
 
-                                {/* Gợi ý nhanh khi chưa nhập gì */}
+                                {/* gợi ý nhanh khi chưa nhập gì */}
                                 {!keyword && (
                                     <div className="p-5">
                                         <p className="text-xs font-semibold text-gray-500 uppercase mb-3">Tìm kiếm phổ biến</p>
