@@ -13,7 +13,7 @@ const Footer =()=>{
             </div>
 
             <div className="payment" style={{marginBottom: '20px'}}>
-                <p>Các hình thứ thanh toán</p>
+                <p>Các hình thức thanh toán</p>
                 <img
                     src="https://xstore.b-cdn.net/elementor2/marseille04/wp-content/uploads/sites/2/elementor/thumbs/Icons-123-pzks3go5g30b2zz95xno9hgdw0h3o8xu97fbaqhtb6.png" alt=""/>
             </div>

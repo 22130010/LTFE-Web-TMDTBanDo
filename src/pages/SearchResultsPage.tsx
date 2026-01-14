@@ -1,4 +1,3 @@
-// src/pages/SearchResultsPage.tsx
 import React, { useMemo } from 'react';
 import { useSearchParams } from 'react-router-dom';
 import ProductList from '../pages/ProductList';
@@ -7,7 +6,7 @@ import { SearchHandler } from '../util/SearchHandler';
 const SearchResultsPage: React.FC = () => {
     const [searchParams] = useSearchParams();
     const keyword = searchParams.get('q') || searchParams.get('category') || "";
-    // Thực hiện tìm kiếm
+    //thực hiện tìm kiếm
     const filteredProducts = useMemo(() => {
         if (!keyword) return [];
         return SearchHandler.search(keyword);

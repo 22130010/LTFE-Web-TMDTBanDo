@@ -25,13 +25,11 @@ const Banner = () => {
 
     return (
         <div className="relative w-full h-[700px] overflow-hidden">
-            {/* Ảnh nền */}
             <div
                 className="w-full h-full bg-cover bg-center transition-all duration-700"
                 style={{ backgroundImage: `url(${images[currentIndex]})` }}
             ></div>
 
-            {/* Mũi tên trái */}
             <button onClick={prevSlide}
                     className="absolute top-1/2 left-6 transform -translate-y-1/2
                      bg-white/70 hover:bg-white text-gray-800 p-3 rounded-full
@@ -39,7 +37,6 @@ const Banner = () => {
                 <ChevronLeftIcon className="h-6 w-6" />
             </button>
 
-            {/* Mũi tên phải */}
             <button onClick={nextSlide}
                     className="absolute top-1/2 right-6 transform -translate-y-1/2
                     bg-white/70 hover:bg-white text-gray-800 p-3 rounded-full shadow-lg t
